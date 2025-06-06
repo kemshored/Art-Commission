@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Comms</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wdth,wght@89.3,400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Lexend:wght@696&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="ligaya.css">
+   <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const loggedIn = localStorage.getItem('loggedIn');
+  if (loggedIn !== 'true') {
+    alert("Please sign up or log in first.");
+    window.location.href = "signup.html";  // Redirect if NOT logged in
+  }
+});
+</script>
+   
+    <script src="review.js" defer ></script>
+    <script src="signup.js" defer></script>
+      <ion-icon name="logo-facebook"></ion-icon>
+    
+
+</head>
+<body>
+  
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo" style="font-family: tektur;">Ligaya<span>.</span></a>
+        <nav class="navbar" >
+            <a href="#welcome" >Home</a>
+            <a href="#product">Packages</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        
+    </header>
+<br> <br> <br> <br> <br> 
+
+<center>
+    <section id="welcome" aria-label="Welcome and Introduction" >
+        <h1 class="heading"> About Us</h1>
+        <img src="35d8d519-41f4-4408-b84f-2156c69554f1.jpg">
+            <br> <br> <br. 
+    <section id="ligaya-description">
+    <div class="wrapper">
+        <h1 class="title">HZKISZNS</h1>
+        <p class="description">
+            Ligaya is a space where art, passion, and creativity come together. This platform is designed 
+            for those who appreciate unique, personalized digital illustrations and wish to commission 
+            artwork that speaks to them.
+        </p>
+        <p class="description">
+            Whether you're interested in concept designs, custom portraits, or aesthetic visuals, Ligaya 
+            is dedicated to bringing artistic visions to life. Feel free to explore the portfolio and 
+            reach out for commissions!
+        </p>
+    </div>
+</section>
+<br> <br> <br>
+<section id="ligaya-description">
+    <div class="wrapper">
+        <h1 class="title">Why Choose Ligaya?</h1>
+        <p class="description">
+            Ligaya is more than just an art platform—it’s a creative space where visions transform into 
+            beautifully crafted digital illustrations. Every piece is designed with passion, precision, 
+            and a deep understanding of artistic storytelling.
+        </p>
+        <p class="description">
+            Whether you're seeking **personalized commissions, aesthetic designs, or unique artistic expressions**, 
+            Ligaya ensures each creation resonates with individuality. Let’s bring your ideas to life together!
+        </p>
+
+        
+    </div>
+
+ 
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const wrappers = document.querySelectorAll(".wrapper"); // Select all wrappers
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show"); // Apply animation to each wrapper
+            }
+        });
+    }, { threshold: 0.5 });
+
+    wrappers.forEach(wrapper => observer.observe(wrapper)); // Loop through all wrappers
+});
+</script>
+
+    <style>
+#welcome{
+
+        background: linear-gradient(to bottom, #ffb9db, #fffcfd); 
+        padding: 40px;
+    text-align: center;
+}
+
+#welcome img {
+    width: 100%;
+    max-width: 100%
+}
+
+</style>
+       
+    </section>
+        
+        <center>
+<section class="product" id="product">
+     <h1 class="heading" ><span> Commission Types </span></a></h1>
+     
+       <!-- Product 1 -->
+       <div class="packages">
+      <article class="package" tabindex="0" aria-label="Basic sketch package">
+        <h3>TYPE SHI</h3>
+        <p class="price">25 - 150 PHP</p>
+        <ul>
+          <li>TYPE SHI PL</li>
+          <li>CLOSE UP - 25 GC</li>
+          <li>Halfbody - 35 gc</li>
+          <li>Customized 50-150 gc</li>
+          
+        </ul>
+      </article>
+
+        <article class="package" tabindex="0" aria-label="Basic sketch package">
+        <h3>Semi-Drawing</h3>
+        <p class="price">50 - 100 PHP</p>
+        <ul>
+          <li> CLOSE UP ONLY</li>
+          <li> 50-100gc </li>
+        </ul>
+      </article>
+        <article class="package" tabindex="0" aria-label="Basic sketch package">
+        <h3>TYPE SHI</h3>
+        <p class="price"> 50 PHP</p>
+        <ul>
+          <li>TYPE MEL PL </li>
+          <li> HEADSHOT - 50GC</li>
+        </ul>
+      </article>
+
+    </section>
+
+      </center>
+     
+
+<!--portfolio section-->
+
+ <section id="portfolio" aria-label="Portfolio showcase" class="portfolio-section">
+    <h1 class="heading"> Portfolio</h1>
+    <h2 class="portfolio-heading">TYPE SHI</h2>
+    <p class="portfolio-description">PORTRAIT</p>
+    <p class="portfolio-description">
+        Here are some examples of recent work to showcase style and quality.
+    </p>
+    <center>
+    <div class="portfolio-images">
+        <img src="1.jpg" alt="Example artwork 1">
+        <img src="3.jpg" alt="Example artwork 3">
+        <img src="4.jpg" alt="Example artwork 4">
+        <img src="5.jpg" alt="Example artwork 5">
+        
+    </div>
+    <br> <br> <br> <br>
+    <h2 class="portfolio-heading"> TYPE SHI</h2>
+    <p class="portfolio-description">Landscape</p>
+    <p class="portfolio-description">
+        Here are some examples of recent work to showcase style and quality.
+    </p>
+    <div class="portfolio-images2">
+        <img src="2.jpg" alt="Example artwork 1">
+                <img src="notcolored2.jpg">
+
+        <img src="6.jpg" alt="Example artwork 3">
+        <img src="notcolored.jpg" alt="Example artwork 1">
+        
+    </div>
+
+      <br> <br> <br> <br>
+    <h2 class="portfolio-heading"> Semi-Drawing </h2>
+    <p class="portfolio-description">Portrait</p>
+    <p class="portfolio-description">
+        Here are some examples of recent work to showcase style and quality.
+    </p>
+    <div class="portfolio-images">
+        <img src="semidrawing1.jpg" alt="Example artwork 1">
+        <img src="notc1.jpg">
+        <img src="semidrawing2.jpg" alt="Example artwork 3">
+        
+
+       
+        </style>
+        </center>
+
+        <style>
+
+        </style>
+    </div>
+     
+  
+
+        <br> <br> <br> <br>
+
+    <h2 class="portfolio-heading"> Chibi Art </h2>
+    <p class="portfolio-description">Portrait</p>
+    <p class="portfolio-description">
+        Here are some examples of recent work to showcase style and quality.
+    </p>
+    <div class="portfolio-images">
+        <img src="ca1.jpg" alt="Example artwork 1">
+        <img src="ca2.jpg" alt="Example artwork 2">
+        <img src="ca3.jpg" alt="Example artwork 2">
+        <img src="ca4.jpg" alt="Example artwork 2">
+</div>
+
+
+        </center>
+    </div>
+<style>
+    /* Portfolio Image Animation */
+.portfolio-images img,
+.portfolio-images2 img {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Start below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animation when visible */
+.portfolio-images img.show,
+.portfolio-images2 img.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover Effect */
+.portfolio-images img:hover,
+.portfolio-images2 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(252, 38, 188, 0.3);
+}
+</style>
+
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll(".portfolio-images img, .portfolio-images2 img");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show"); // Apply animation
+            }
+        });
+    }, { threshold: 0.3 });
+
+    images.forEach(img => observer.observe(img)); // Loop through all images
+});
+</script>
+
+
+</section>
+
+
+<!--portfolio Section ends here-->
+
+<!-- Portfolio -->
+ 
+
+ <!--Portfolio section ends -->
+<!--contact section starts-->
+
+
+<!--contact section starts-->
+<section class="contact-wrapper show">
+<section class="contact" id="contact">
+    <center>
+        <h1 class="heading"><span>Contact Me</span></h1>
+        <img src="ligayaicon.jpg" alt="Ligaya's Profile Picture" class="profile-pic"> 
+        <p>Interested in my artworks? Don't worry, I got you!</p>
+        <br> <br> 
+                <div class="client-info">
+                    <h3>Contact Information:</h3>
+                    <p>If you have any questions or inquiries, feel free to reach out through these links:</p>
+                    <ul>
+                    </>
+                        <li>
+                            <i class="fas fa-envelope" style="font-size: 3rem;"></i> 
+                             <a href="mailto:uno.hychiro@gmail.com"  style="font-size: 2rem; color: #ff5b95; " >uno.hychiro@gmail.com</a>
+                        </li> <br>
+                        <li>
+                            <i class="fab fa-instagram" style="font-size: 3rem;"></i></i> 
+                             <a href="https://www.instagram.com/hzki.zns" style="font-size: 2rem; color: #ff5b95;" target="_blank">hzki.zns</a>
+                        </li> <br>
+                        <li>
+                        <i class="fab fa-facebook-f" style="font-size: 3rem;"></i></i> 
+                         <a href="https://www.facebook.com/Ligaya" style="font-size: 2rem; color: #ff5b95;" target="_blank" >Ligaya</a>
+                        </li><br>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+<style>
+/* Contact Section Wrapper */
+.contact-wrapper {
+    background: linear-gradient(to bottom, #ffdee9, #fff1f5); /* Light pink gradient */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(255, 105, 180, 0.3);
+    max-width: 1000px;
+    margin: auto;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid#ff5b95; /* Soft pink border */
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0px 5px 15px rgba(255, 105, 180, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 105, 180, 0.4);
+}
+.contact-wrapper.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Hover Effect - Added Here */
+.contact-wrapper:hover {
+    box-shadow: 0px 10px 25px rgba(255, 105, 180, 0.5); /* Increases shadow on hover */
+    transform: scale(1.02); /* Slight scale-up effect */
+}
+
+/* Contact List Items */
+.contact-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: transform 0.3s ease; /* Added transition */
+}
+
+/* Icons Hover Effect - Added Here */
+.contact-list i:hover {
+    transform: scale(1.2); /* Slightly enlarges icons on hover */
+}
+
+/* Links Hover Effect - Added Here */
+.contact-list a:hover {
+    color: #fc26bc; /* Darker pink on hover */
+}
+
+
+
+    .contact ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.contact .client-info ul li i.fab.fa-instagram {
+color: #C13584;
+
+}
+
+.contact .client-info ul li i.fas.fa-envelope {
+  color: #D44638; 
+  margin-right: 8px;
+}
+
+.contact .client-info ul li i.fab.fa-facebook-f {
+  color: #3b5998; /* Facebook blue */
+  margin-right: 8px;
+}
+
+    </style>
+
+    
+     <script>
+document.addEventListener("DOMContentLoaded", () => {
+const contactWrapper = document.querySelector("section.contact-wrapper");
+
+    if (!contactWrapper) return; // Prevent errors if element isn't found
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show"); // Make the wrapper visible
+            }
+        });
+    }, { threshold: 0.3 }); // Adjusted for quicker activation
+
+    observer.observe(contactWrapper);
+});
+
+     
+</script>
+<br> <br> <br> <br> 
+    </div>
+</section> </section>
+
+<center>
+    <section class="payment" id="payment">
+    <h2 class="heading"><span>Mode of Payment:</span></h2>
+    <img src="gcash.jpg" class="gcash-image">
+    <div class="payment-info">
+        <br> <br> 
+        <ul>
+            <li style="font-size: 2rem;">GCash: <strong> 09624043397 EJD </strong></li>
+        </ul>
+    </div>
+    </section>
+    
+    </center>
+</section>
+<!--contact section ends-->
+ <!--footer section starts-->
+<section class="footer">
+    <div class="box-container" >
+        <div class="box">
+            <h2>quick links</h2>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">portfolio</a>
+            <a href="#">contact</a>
+        </div>
+
+       
+
+        <div class="box" >
+            <h2>contact info</h2>
+            <a href="https://www.instagram.com/hzki.zns">instagram</a>
+            <a href="https://www.facebook.com/Ligaya">facebook</a>
+            <a href=""> email</a>
+        
+        
+
+    </div>
+
+    
+</section>
+
+<section class="credit-section">
+  <div class="credit">
+    created by <span class="creator-name"> Coquette Girlies</span> | <strong>All Rights Reserved</strong>
+   
+      <div class="logoutbtn" id="logoutbtn">
+      <a href="index.html" style="color: pink;"> Leave the site? </a>
+     </div>
+    </div>
+  </div>
+</section>
+
+<style>
+
+</style>
+
+
+
+       
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

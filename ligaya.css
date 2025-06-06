@@ -1,0 +1,67 @@
+#ligaya-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Space between the boxes */
+    max-width: 1100px;
+    margin: auto;
+}
+
+.wrapper {
+    background: linear-gradient(to bottom, #ffb9db, #fff);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(255, 105, 180, 0.3);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    
+    /* Hidden by default for animation */
+    opacity: 0;
+    transform: translateY(50px); /* Start position */
+}
+
+/* Hover Effect */
+.wrapper:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 10px 25px rgba(255, 105, 180, 0.4);
+}
+
+/* Animation when visible */
+.wrapper.show {
+    opacity: 1;
+    transform: translateY(0); /* Moves up into place */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+/* Wrapper for Ligaya Description */
+.wrapper {
+    background: linear-gradient(to bottom, #ffe8e8, #fff);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(255, 105, 180, 0.3);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Title */
+.title {
+    font-size: 2.5rem;
+    color:#ff5b95;
+    margin-bottom: 10px;
+}
+
+/* Description Text */
+.description {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Interactive Hover Effect */
+.wrapper:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 10px 25px rgba(255, 105, 180, 0.4);
+}
